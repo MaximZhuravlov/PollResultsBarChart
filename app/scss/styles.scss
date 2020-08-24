@@ -1,0 +1,121 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color: #EEE;
+	color: #111;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.page-title {
+	text-align: center;
+	margin: 1.25rem 0 1rem 0;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.chart-container {
+	position: relative;
+	max-width: 1140px;
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.poll-form {
+	background-color: #fff;
+	color: #333;
+	width: 30vw;
+	margin: 1.75rem auto 1rem auto;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+
+	&-heading {
+		padding: 1rem;
+		border-bottom: 1px solid;
+		border-image: linear-gradient(to right, transparent, #333, transparent) 1;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&-body {
+		padding: 1rem;
+
+		ul {
+			list-style-type: none;
+			border: 1px solid #ccc;
+			border-radius: 0.5rem;
+		}
+
+		label {
+			display: block;
+			width: 100%;
+			padding: 0.5rem;
+
+			&:hover {
+				background-color: #eee;
+			}
+		}
+
+		input[type="radio"]:checked + span {
+			font-weight: 700;
+		}
+	}
+
+	&-footer {
+		padding-bottom: 1rem;
+		text-align: center;
+
+		button {
+			background-color: #777;
+			color: #fff;
+			padding: 0.5rem;
+			font-size: 1.25rem;
+			font-weight: 700;
+			border: none;
+			outline: none;
+			width: 7rem;
+			border-radius: 0.25rem;
+			cursor: pointer;
+			transition: background-color 0.2s;
+
+			&:hover {
+				background-color: #333;
+			}
+
+			&:active {
+				background-color: #111;
+			}
+		}
+	}
+}
+
+@media(max-width: 992px) {
+	.poll-form {
+		width: 60%;
+	}
+}
+
+@media(max-width: 767px) {
+	.poll-form {
+		width: 80%;
+	}
+}
+
+@media(max-width: 577px) {
+	.poll-form {
+		width: 90%;
+	}
+}

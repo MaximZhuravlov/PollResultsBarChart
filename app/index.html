@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="page-title">Poll Results with Chart.js</h1>
+		<div class="chart-container">
+			<canvas class="poll" id="poll"></canvas>
+		</div>
+		<form action="#" id="poll-form" class="poll-form">
+			<h3 class="poll-form-heading">Favourite Superhero</h3>
+			<div class="poll-form-body">
+				<ul>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Spider-Man">
+							<span>Spider-Man</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Super-Man">
+							<span>Super-Man</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Batman">
+							<span>Batman</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Son Goku">
+							<span>Son Goku</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Hulk">
+							<span>Hulk</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Wolverine">
+							<span>Wolverine</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pollOption" value="Others">
+							<span>Others</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<div class="poll-form-footer">
+				<button type="submit">Vote</button>
+			</div>
+		</form>
+	</div>
+
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
